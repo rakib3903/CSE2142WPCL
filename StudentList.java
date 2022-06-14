@@ -27,10 +27,9 @@ public class StudentList {
 						new InputStreamReader(
 							new FileInputStream("students.txt")));
 				String r = s.readLine();
-			    System.out.println(r);
 			    String i[] = r.split(",");
-			    Random x = new Random();
-				int y = x.nextInt();
+			    double x = Math.random() * 4;
+				int y = (int) x;
 				System.out.println(i[y]);
 			} catch (Exception e) {
 
